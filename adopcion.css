@@ -1,0 +1,126 @@
+
+.hero-form {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cat-eyes {
+    width: 1100px;
+    display: block;
+    margin: 0 auto -30px auto;
+}
+
+.hero-title {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.hero-sub {
+    font-size: 18px;
+    margin: 10px 0 30px 0;
+    color: #555;
+}
+
+.adopt-form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #14b8c4;
+    border-radius: 10px;
+    background: #ffffffa8;
+}
+
+.adopt-form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.adopt-form input,
+.adopt-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 2px solid #bceff4;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.adopt-form textarea {
+    height: 100px;
+}
+
+.adopt-form button {
+    background: #19c4d1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.adopt-form button:hover {
+    background: #0aa4b0;
+}
+
+.file-input {
+    padding: 10px;
+    background: #f7feff;
+    border: 2px solid #bceff4;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-input:hover {
+    border-color: #19c4d1;
+}
+
+@media (max-width: 768px) {
+
+  .cat-eyes {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    padding: 0 15px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .adopt-form {
+    width: 90%;       
+    padding: 20px;
+  }
+
+  .adopt-form label {
+    font-size: 14px;
+  }
+
+  .adopt-form input,
+  .adopt-form textarea {
+    font-size: 14px;
+  }
+
+  .adopt-form button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .kittens-bottom {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+}

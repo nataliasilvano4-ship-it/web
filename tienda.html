@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Solidaria - CatMatch</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="tienda.css"> 
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">
+        <a href="index.html">
+          <img src="catmatch.png" alt="Cat Match" class="logo-img">
+        </a>        
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="adopta.html">Adopta un gatito</a></li>
+        <li><a href="pon en adopción.html">Pon en adopción</a></li>
+        <li><a href="tienda.html">Tienda solidaria</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+  </div>
+
+<section class="hero-tienda">
+    <img src="img/gatito saludando.png" class="hero-cat" alt="Gato tienda">
+    <p class="hero-text">
+        "Encuentra lo necesario para el cuidado de tu felino."
+    </p>
+</section>
+
+    <div class="buscador-container">
+    <input type="text" id="searchInput" placeholder="Buscar productos...">
+</div>
+
+<section class="categoria">
+    <h2 class="cat-title">Comida</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto-card">
+            <img src="img/ricocancat.jpg" alt="Producto 1">
+            <h3>Bolsa de Ricocan Cat 15kg</h3>
+            <p class="precio">S/100.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/ricocancat.jpg','Bolsa de Ricocan Cat 15kg',100.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/canbom.jpg" alt="Producto 2">
+            <h3>Bolsa de Canbom 15Kg para gatitos esterilizados</h3>
+            <p class="precio">S/130.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/canbom.jpg','Bolsa de Canbom 15kg para gatitos esterilizados',130.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/gran plus.jpg" alt="Producto 3">
+            <h3>Gran Plus 3kg cachorro</h3>
+            <p class="precio">S/50.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/gran plus.jpg','Gran plus 3kg cachorro',50.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/comida humeda.jpg" alt="Producto 4">
+            <h3>Candom comida húmeda, Adulto</h3>
+            <p class="precio">S/15.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/comida humeda.jpg','Canbom comida humeda, Adulto',15.00)">Agregar</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="categoria">
+    <h2 class="cat-title">Aseo personal</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto-card">
+            <img src="img/shampoo de avena.jpg" alt="Aseo 1">
+            <h3>Shampoo de avena 500ml</h3>
+            <p class="precio">S/30.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/shampoo de avena.jpg','Shampoo de avena 500ml',30.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/aloe vera.jpg" alt="Aseo 2">
+            <h3>Acondicionador de Aloe Vera 500ml</h3>
+            <p class="precio">S/30.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/aloe vera.jpg','Acondicionador de Aloe Vera 500ml',30.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/pañales.jpg" alt="Aseo 3">
+            <h3>Pañales para cachorros 24u</h3>
+            <p class="precio">S/40.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/pañales.jpg','Pañales para cachorros 24u',40.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/antipulgas.jpg" alt="Aseo 4">
+            <h3>Antipulgas 1 tubo</h3>
+            <p class="precio">S/35.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/antipulgas.jpg','Antipulgas 1 tubo',35.00)">Agregar</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="categoria">
+    <h2 class="cat-title">Juguetes</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto-card">
+            <img src="img/ratones coloridos.jpg" alt="juguete 1">
+            <h3>Ratones coloridos 2u</h3>
+            <p class="precio">S/15.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/ratones coloridos.jpg','Ratones coloridos 2u',15.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/juguete inteligente.jpg" alt="juguete 2">
+            <h3>Juguete inteligente para gatos, pelota interactiva con felpa</h3>
+            <p class="precio">S/30.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/juguete inteligente.jpg','Juguete inteligente para gatos, pelota interactiva con felpa',30.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/pez arrugado.jpg" alt="juguete 3">
+            <h3>Pez arrugado 3u</h3>
+            <p class="precio">S/15.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/pez arrugado.jpg','pez arrugado 3u',15.00)">Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="img/tunel.jpg" alt="juguete 4">
+            <h3>Tunel para gatos</h3>
+            <p class="precio">S/35.00</p>
+            <button class="btn-agregar" onclick="addToCart('img/tunel.jpg','Tunel para gatos',35.00)">Agregar</button>
+            </div>
+    </div>
+
+</section>
+
+<section class="mensaje-solidario">
+  <div class="burbuja">
+    Parte de las ganancias se destinan a refugios de gatitos abandonados
+  </div>
+
+  <img src="img/gato solidario.png" alt="Gato solidario" class="gato-solidario">
+</section>
+
+<div class="cart-icon" id="openCart">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+        🛒 <span id="cart-count-modal">0</span>
+    </div>
+
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        <tbody id="cartItems"></tbody>
+    </table>
+
+    <div class="cart-total">
+        <strong>Total: S/<span id="cartTotal">0.00</span></strong>
+    </div>
+
+    <button class="btn-finalizar">Finalizar compra</button>
+</div>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
